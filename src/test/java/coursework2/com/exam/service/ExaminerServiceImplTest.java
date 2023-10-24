@@ -25,11 +25,10 @@ class ExaminerServiceImplTest {
 
     @Test
     void getQuestions_shouldSetQuestionsIfQuestionsEnough() {
-        int amount = 3;
+        int amount = 2;
         Question question = new Question("question", "answer");
         Question question1 = new Question("question1", "answer1");
-        Question question2 = new Question("question2", "answer2");
-        Set<Question> questions = Set.of(question, question1, question2);
+        Set<Question> questions = Set.of(question, question1);
 
         when(questionService.getAll()).thenReturn(questions);
         when(questionService.getRandomQuestion()).thenReturn(question, question1);

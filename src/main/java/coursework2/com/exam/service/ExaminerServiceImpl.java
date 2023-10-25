@@ -19,7 +19,7 @@ public class ExaminerServiceImpl implements ExaminerService {
 
     }
     @Override
-    public Collection<Question> getQuestions(int amount) {
+    public  Collection<Question> getQuestions(int amount) {
         if (questionService.getAll().size() < amount){
             throw new NotEnoughQuestion();
         }

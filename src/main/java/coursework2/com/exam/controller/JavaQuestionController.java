@@ -31,5 +31,6 @@ public class JavaQuestionController {
     public Question removeQuestion(@RequestParam String question,@RequestParam String answer) {
         return service.remove(new Question(question, answer));
 
+
     }
 }

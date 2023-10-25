@@ -43,5 +43,7 @@ public class JavaQuestionService implements QuestionService {
         int random = rnd.nextInt(questions.size());
         return (Question) questions.toArray()[random];
 
+
+
     }
 }
